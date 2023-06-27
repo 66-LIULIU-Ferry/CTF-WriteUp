@@ -1,39 +1,36 @@
 # Magikarp Ground Mission
-### Description
+## Description
 >Do you know how to move between directories and read files in the shell? Start the container, `ssh` to it, and then `ls` once connected to begin. Login via `ssh` as `ctf-player` with the password, `b60940ca`
 
+<br />Before showing the specific steps to figure out the flag, there are several knowledge points need to be understood during the process
 
-Before showing the specific steps to figure out the flag, there are several knowledge points need to be understood during the process
+## Shell
+**1. What is Shell?**
 
+Before understanding Shell, we have to get familiar with all the following terminologies: **Kernel, Shell, Terminal**
 
-### Shell
-1. What is Shell?
-Before understanding shell, we have to get familiar with all the following terminologies: **Kernel, Shell, Terminal**
+- **Kernel** is a computer program that is the core of a computer’s operating system, with complete control over everything in the system.
+- **Shell** is a special user program that provides an interface for the user to use operating system services. Shell accepts human-readable commands from users and converts them into something which the kernel can understand. It is a command language interpreter that executes commands read from input devices such as keyboards or from files. The shell gets started when the user logs in or starts the terminal.
+- **Terminal** is a program which is responsible for providing an interface to a user so that he/she can access the shell.
 
-- Kernel
-The kernel is a computer program that is the core of a computer’s operating system, with complete control over everything in the system.
-
-- Shell
-The shell is a special user program that provides an interface for the user to use operating system services. Shell accepts human-readable commands from users and converts them into something which the kernel can understand. It is a command language interpreter that executes commands read from input devices such as keyboards or from files. The shell gets started when the user logs in or starts the terminal.
 > So if we are using any major operating system, we are **indirectly** interacting with the shell
 
-Shell is broadly classified into two categories: Command Line Shell and Graphical shell
+Shell is broadly classified into two categories: **Command Line Shell** and **Graphical shell**
 
-- Terminal
-A program which is responsible for providing an interface to a user so that he/she can access the shell.
+<br />
 
-2. Basic Shell Command
-2.1 Display the File Content
-- <u>cat, less, more</u>
-- <u>nano</u>: use text editor
-- <u>head, tail</u>: print the first n / last (n-1) lines
-2.2 File and Directory Manipulation 
-- <u>mkdir</u>: create a directory 
-- <u>rmdir</u>: delete a directory if it is empty
-- <u>cp</u>: copy the files and directories from the source path to the destination path
-- <u>mv</u>: move the files or directories
-- <u>rm</u>: remove files or directories
-- <u>touch</u>: create or update a file 
+**2. Basic Shell Command**
+- Display the File Content
+  - **cat, less, more**
+  - **nano**: use text editor
+  - **head, tail**: print the first n / last (n-1) lines
+- File and Directory Manipulation 
+  - <u>mkdir</u>: create a directory 
+  - <u>rmdir</u>: delete a directory if it is empty
+  -  <u>cp</u>: copy the files and directories from the source path to the destination path
+  - <u>mv</u>: move the files or directories
+  - <u>rm</u>: remove files or directories
+  - <u>touch</u>: create or update a file 
 2.3 Extract, Sort and Filter Data
 - <u>grep</u>: search for the specified text in a file
 - <u>sort</u>: sort the contents of files
