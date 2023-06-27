@@ -2,7 +2,9 @@
 ## Description
 >Do you know how to move between directories and read files in the shell? Start the container, `ssh` to it, and then `ls` once connected to begin. Login via `ssh` as `ctf-player` with the password, `b60940ca`
 
-<br />Before showing the specific steps to figure out the flag, there are several knowledge points need to be understood during the process
+<br />
+
+Before showing the specific steps to figure out the flag, there are several knowledge points need to be understood during the process
 
 ## Shell
 **1. What is Shell?**
@@ -25,39 +27,42 @@ Shell is broadly classified into two categories: **Command Line Shell** and **Gr
   - **nano**: use text editor
   - **head, tail**: print the first n / last (n-1) lines
 - File and Directory Manipulation 
-  - <u>mkdir</u>: create a directory 
-  - <u>rmdir</u>: delete a directory if it is empty
-  -  <u>cp</u>: copy the files and directories from the source path to the destination path
-  - <u>mv</u>: move the files or directories
-  - <u>rm</u>: remove files or directories
-  - <u>touch</u>: create or update a file 
-2.3 Extract, Sort and Filter Data
-- <u>grep</u>: search for the specified text in a file
-- <u>sort</u>: sort the contents of files
-- <u>wc</u>: count the number of characters, words in a file
-- <u>cut</u>: cut a specified part of a file
-2.4 Basic Navigation Commands
-- <u>ls</u>: list all the files or folders
-- <u>ls -a</u>: list all files including the hidden files
-- <u>cd</u>: change the directory
-- <u>du</u>: show disk usage
-- <u>pwd</u>: show the present working directory
-- <u>man</u>: show all commands in Linux
+  - **mkdir**: create a directory 
+  - **rmdir**: delete a directory if it is empty
+  - **cp**: copy the files and directories from the source path to the destination path
+  - **mv**: move the files or directories
+  - **rm**: remove files or directories
+  - **touch**: create or update a file 
+- Extract, Sort and Filter Data
+  - **grep**: search for the specified text in a file
+  - **sort**: sort the contents of files
+  - **wc**: count the number of characters, words in a file
+  - **cut**: cut a specified part of a file
+- Basic Navigation Commands
+  - **ls**: list all the files or folders
+  - **ls -a**: list all files including the hidden files
+  - **cd**: change the directory
+  - **du**: show disk usage
+  - **pwd**: show the present working directory
+  - **man**: show all commands in Linux
 
 For more details, please check:
-\[Basic Shell Commands in Linux\]\(https://www.geeksforgeeks.org/basic-shell-commands-in-linux/\)
-\[Unix and Shell commands\]\(https://afni.nimh.nih.gov/pub/dist/edu/data/CD.expanded/AFNI_data6/unix_tutorial/misc/unix_commands.html#u-mcc-amp\)
 
+- [Basic Shell Commands in Linux](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/)
+- [Unix and Shell commands](https://afni.nimh.nih.gov/pub/dist/edu/data/CD.expanded/AFNI_data6/unix_tutorial/misc/unix_commands.html#u-mcc-amp)
+- [Open a text file in Linux terminal](https://itslinuxfoss.com/do-i-open-text-file-linux-terminal/#:~:text=To%20open%20a%20text%20file%20in%20a%20Linux%20terminal%2C%20we,the%20content%20on%20the%20terminal)
 
-Unix and Shell commands: https://afni.nimh.nih.gov/pub/dist/edu/data/CD.expanded/AFNI_data6/unix_tutorial/misc/unix_commands.html#u-mcc-amp
-Open a text file in Linux terminal: https://itslinuxfoss.com/do-i-open-text-file-linux-terminal/#:~:text=To%20open%20a%20text%20file%20in%20a%20Linux%20terminal%2C%20we,the%20content%20on%20the%20terminal.
+<br />
 
-3. Shell Script
-Shell scripts or shell program are the files where we can write shell commands to avoid repetitive work. These files is saved with **'.sh'** extension.
+**3. Shell Script**
 
+Shell scripts or shell program are the files where we can write shell commands to avoid repetitive work. These files is saved with `.sh` extension.
 
-### SSH
-1. What is SSH?
+<br />
+
+## SSH
+**1. What is SSH?**
+   
 SSH, also known as Secure Shell or Secure Socket Shell, is a network protocol that gives users a secure way to access a computer over an unsecured network. SSH also refers to the suite of utilities that implement the SSH protocol.
 
 SSH service was created as a secure replacement for the unencrypted Telnet and uses cryptographic techniques to ensure that all communication to and from the remote server happens in an encrypted manner.
@@ -66,44 +71,63 @@ SSH service was created as a secure replacement for the unencrypted Telnet and u
 > 2. Asymmetrical encryption
 > 3. Hashing
 
-2. How does SSH work?
+<br />
+
+**2. How does SSH work?**
+
 The SSH command consists of 3 distinct parts:
-'ssh {user}@{host}'
-'{user}': the account you want to access
-'{host}': this can be IP address or a domain name
+> `ssh {user}@{host}`
 
-For more SSH commands, find them here: https://www.hostinger.com/tutorials/ssh/basic-ssh-commands
+`{user}`  the account you want to access
 
+`{host}`  this can be IP address or a domain name
 
-### Guideline
+<br />For more SSH commands, find them here: https://www.hostinger.com/tutorials/ssh/basic-ssh-commands
+
+<br />
+
+## Guideline
 At the beginning, enter the command provided in the instance with terminal and log in with the provided password.
+
 ![1](1.jpg) 
+> Based on the default shell prompt, we can tell the shell type
+> <br />Bourne shell: $
+> <br />C shell: % 
 
-Continue to enter 'ls' once connected and there are 2 files turning up.
-![2](2.png)
+<br />Continue to enter 'ls' once connected and there are 2 files turning up.
 
-Open the '1of3.flag.txt' file with command 'cat', we will get the first part of flag.
-![3](3.png)
+<img src="2.png" width="500" height="50">
 
-Open the 'instructions-to-2of3.txt', we get the instruction to the next part.
-![4](4.png)
+<br/>Open the '1of3.flag.txt' file with command 'cat', we will get the first part of flag.
 
-Follow the instruction, we go to the root and can list all file in that directory.
-![5](5.png)
+<img src="3.png" width="500" height="50">
 
-Open the '2of3.flag.txt', we will get the second part of flag.
-![6](6.png)
+<br/>Open the 'instructions-to-2of3.txt', we get the instruction to the next part.
 
-Open the 'instructions-to-3of3.txt', we get the instruction to the next part.
-![7](7.png)
+<img src="4.png" width="500" height="50">
 
-Follow the instruction, we go to the home and can list all file in that directory.
-![8](8.png)
+<br/>Follow the instruction, we go to the root and can list all file in that directory.
 
-Now we open the '3of3.flag.txt' to get the final part of flag. (Hooray!)
-![9](9.png) 
+<img src="5.png" width="900" height="70">
 
-Finally, assemble selected parts in order to the complete flag, that is 'picoCTF{xxsh_0ut_0f_\/\/4t3r_c1754242}'. Type it in the answer box, the connection will terminate automatically and you capture the flag successfully!
-![10](10.png)
+<br/>Open the '2of3.flag.txt', we will get the second part of flag.
+
+<img src="6.png" width="500" height="50">
+
+<br/>Open the 'instructions-to-3of3.txt', we get the instruction to the next part.
+
+<img src="7.png" width="500" height="50">
+
+<br/>Follow the instruction, we go to the home and can list all file in that directory.
+
+<img src="8.png" width="400" height="50">
+
+<br/>Now we open the '3of3.flag.txt' to get the final part of flag. (Hooray!)
+
+<img src="9.png" width="450" height="40">
+
+<br/>Finally, assemble selected parts in order to the complete flag, that is 'picoCTF{xxsh_0ut_0f_\/\/4t3r_c1754242}'. Type it in the answer box, the connection will terminate automatically and you capture the flag successfully!
+
+<img src="10.png" width="800" height="70">
 
 
