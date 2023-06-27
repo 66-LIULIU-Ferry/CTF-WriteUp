@@ -79,10 +79,34 @@ For more SSH commands, find them here: https://www.hostinger.com/tutorials/ssh/b
 
 
 ### Guideline
+At the beginning, enter the command provided in the instance with terminal and log in with the provided password.
+![1](1.jpg) 
 
+Continue to enter 'ls' once connected and there are 2 files turning up.
+![2](2.png)
 
+Open the '1of3.flag.txt' file with command 'cat', we will get the first part of flag.
+![3](3.png)
 
+Open the 'instructions-to-2of3.txt', we get the instruction to the next part.
+![4](4.png)
 
+Follow the instruction, we go to the root and can list all file in that directory.
+![5](5.png)
 
+Open the '2of3.flag.txt', we will get the second part of flag.
+![6](6.png)
+
+Open the 'instructions-to-3of3.txt', we get the instruction to the next part.
+![7](7.png)
+
+Follow the instruction, we go to the home and can list all file in that directory.
+![8](8.png)
+
+Now we open the '3of3.flag.txt' to get the final part of flag. (Hooray!)
+![9](9.png) 
+
+Finally, assemble selected parts in order to the complete flag, that is 'picoCTF{xxsh_0ut_0f_\/\/4t3r_c1754242}'. Type it in the answer box, the connection will terminate automatically and you capture the flag successfully!
+![10](10.png)
 
 
