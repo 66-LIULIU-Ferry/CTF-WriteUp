@@ -89,32 +89,34 @@ The SSH command consists of 3 distinct parts:
 ## Guideline
 At the beginning, enter the command provided in the instance with terminal and log in with the provided password.
 
-`% ssh ctf-player@venus.picoctf.net -p 60264
-<br />The authenticity of host '[venus.picoctf.net]:60264 ([3.131.124.143]:60264)' can't be established.
-<br />ED25519 key fingerprint is SHA256:P1f6h95BrSVnJbm2AKhphfHHGEyAeThib/rN/AwKs24.
-<br />This host key is known by the following other names/addresses:
-<br />    ~/.ssh/known_hosts:3: [venus.picoctf.net]:60063
-<br />    ~/.ssh/known_hosts:6: [venus.picoctf.net]:60128
-<br />Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-<br />Warning: Permanently added '[venus.picoctf.net]:60264' (ED25519) to the list of known hosts.
-<br />ctf-player@venus.picoctf.net's password: 
-<br />Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.4.0-1041-aws x86_64)
+```
+% ssh ctf-player@venus.picoctf.net -p 60264
+The authenticity of host '[venus.picoctf.net]:60264 ([3.131.124.143]:60264)' can't be established.
+ED25519 key fingerprint is SHA256:P1f6h95BrSVnJbm2AKhphfHHGEyAeThib/rN/AwKs24.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:3: [venus.picoctf.net]:60063
+    ~/.ssh/known_hosts:6: [venus.picoctf.net]:60128
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[venus.picoctf.net]:60264' (ED25519) to the list of known hosts.
+ctf-player@venus.picoctf.net's password: 
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.4.0-1041-aws x86_64)
 
-<br /> * Documentation:  https://help.ubuntu.com
-<br /> * Management:     https://landscape.canonical.com
-<br /> * Support:        https://ubuntu.com/advantage
-<br />This system has been minimized by removing packages and content that are not required on a system that users do not log into.
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+This system has been minimized by removing packages and content that are not required on a system that users do not log into.
 
 To restore this content, you can run the 'unminimize' command.
 
 The programs included with the Ubuntu system are free software;
-<br />the exact distribution terms for each program are described in the
-<br />individual files in /usr/share/doc/*/copyright.
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
 
-<br />Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
-<br />applicable law.
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
 
-ctf-player@pico-chall$`
+ctf-player@pico-chall$
+```
 > Based on the default shell prompt, we can tell the shell type
 > <br />Bourne shell: $
 > <br />C shell: % 
@@ -125,41 +127,55 @@ ctf-player@pico-chall$`
 
 <br/>Open the '1of3.flag.txt' file with command 'cat', we will get the first part of flag.
 
-`$ cat 1of3.flag.txt 
-<br />picoCTF{xxsh_`
+```
+$ cat 1of3.flag.txt 
+picoCTF{xxsh_
+```
 
 <br/>Open the 'instructions-to-2of3.txt', we get the instruction to the next part.
 
-`$ cat instructions-to-2of3.txt 
-<br />Next, go to the root of all things, more succinctly `/``
+```
+$ cat instructions-to-2of3.txt 
+Next, go to the root of all things, more succinctly `/`
+```
 
 <br/>Follow the instruction, we go to the root and can list all file in that directory.
 
-`$ cd /
-<br />$ ls
-<br />2of3.flag.txt  boot  etc   instructions-to-3of3.txt  lib64  mnt  proc  run   srv  tmp  var
-<br />bin	       dev   home  lib			     media  opt  root  sbin  sys  usr`
+```
+$ cd /
+$ ls
+2of3.flag.txt  boot  etc   instructions-to-3of3.txt  lib64  mnt  proc  run   srv  tmp  var
+bin	       dev   home  lib			     media  opt  root  sbin  sys  usr
+```
 
 <br/>Open the '2of3.flag.txt', we will get the second part of flag.
 
-`$ cat 2of3.flag.txt 
-<br />0ut_0f_\/\/4t3r_`
+```
+$ cat 2of3.flag.txt 
+0ut_0f_\/\/4t3r_
+```
 
 <br/>Open the 'instructions-to-3of3.txt', we get the instruction to the next part.
 
-`$ cat instructions-to-3of3.txt 
-<br />Lastly, ctf-player, go home... more succinctly `~``
+```
+$ cat instructions-to-3of3.txt 
+Lastly, ctf-player, go home... more succinctly `~`
+```
 
 <br/>Follow the instruction, we go to the home and can list all file in that directory.
 
-`$ cd ~
-<br />$ ls
-<br />3of3.flag.txt  drop-in`
+```
+$ cd ~
+$ ls
+3of3.flag.txt  drop-in
+```
 
 <br/>Now we open the '3of3.flag.txt' to get the final part of flag. (Hooray!)
 
-`$ cat 3of3.flag.txt 
-<br />c1754242}`
+```
+$ cat 3of3.flag.txt 
+c1754242}
+```
 
 <br/>Finally, assemble selected parts in order to the complete flag, that is 'picoCTF{xxsh_0ut_0f_\/\/4t3r_c1754242}'. Type it in the answer box, the connection will terminate automatically and you capture the flag successfully!
 
