@@ -49,7 +49,7 @@ Shell is broadly classified into two categories: **Command Line Shell** and **Gr
 
 For more details, please check:
 
-- [Basic Shell Commands in Linux](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/)
+- [Linux Document]([https://www.geeksforgeeks.org/basic-shell-commands-in-linux/](https://linux.die.net/))
 - [Unix and Shell commands](https://afni.nimh.nih.gov/pub/dist/edu/data/CD.expanded/AFNI_data6/unix_tutorial/misc/unix_commands.html#u-mcc-amp)
 - [Open a text file in Linux terminal](https://itslinuxfoss.com/do-i-open-text-file-linux-terminal/#:~:text=To%20open%20a%20text%20file%20in%20a%20Linux%20terminal%2C%20we,the%20content%20on%20the%20terminal)
 
