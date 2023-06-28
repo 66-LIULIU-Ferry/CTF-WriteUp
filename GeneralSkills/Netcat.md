@@ -22,8 +22,9 @@ Netcat Uses Include:
 **2. Basic Netcat Command**
 
 To connect to somewhere: `nc [-option] host port[s] port`
+<br />To list all available commands: `nc -h`
 
-To list all available commands: `nc -h`
+For more details, please check: https://linux.die.net/man/1/nc
 
 <br />
 
