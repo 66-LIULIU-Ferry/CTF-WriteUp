@@ -6,6 +6,7 @@
 
 ## Net Cat
 **1. What is Net Cat?**
+
 Netcat is a networking utility with the help of TCP/IP protocol which reads and writes data across network connections. Netcat is built as a secure back-end tool and can be used to send files from a client to a server and back directly with other programmes and scripts.
 
 Netcat Uses Include:
@@ -19,6 +20,7 @@ Netcat Uses Include:
 <br />
 
 **2. Basic Netcat Command**
+
 To connect to somewhere: `nc [-option] host port[s] port`
 
 To list all available commands: `nc -h`
@@ -26,3 +28,11 @@ To list all available commands: `nc -h`
 <br />
 
 ## Guideline
+
+Enter the connect command into terminal and capture the flag
+
+```
+$ nc jupiter.challenges.picoctf.org 25103
+You're on your way to becoming the net cat master
+picoCTF{nEtCat_Mast3ry_d0c64587}
+```
