@@ -3,4 +3,4 @@ This is a record of my daily CTF exercise from PicoCTF as a beginner in cyber se
 
 
 General Skills:
-<br />[Magikarp Ground Mission](MagikarpGroundMission/MagikarpGroundMission.md)
+<br />[Magikarp Ground Mission](MagikarpGroundMission/MagikarpGroundMission.md) (Shell, SSH)
