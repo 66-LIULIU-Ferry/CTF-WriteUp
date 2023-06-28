@@ -34,6 +34,7 @@ Shell is broadly classified into two categories: **Command Line Shell** and **Gr
   - **rm**: remove files or directories
   - **touch**: create or update a file 
 - Extract, Sort and Filter Data
+  - **strings**: cast binary/executable file to human-readable string 
   - **grep**: search for the specified text in a file
   - **sort**: sort the contents of files
   - **wc**: count the number of characters, words in a file
