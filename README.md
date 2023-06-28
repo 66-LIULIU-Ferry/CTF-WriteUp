@@ -3,5 +3,5 @@ This is a record of my daily CTF exercise from PicoCTF as a beginner in cyber se
 
 
 General Skills:
-<br />[Magikarp Ground Mission](MagikarpGroundMission.md) (Shell, SSH)
-<br />[What is Net Cat?](Netcat.md) (Net Cat)
+<br />[Magikarp Ground Mission](GeneralSkills/MagikarpGroundMission.md) (Shell, SSH)
+<br />[What is Net Cat?](GeneralSkills/Netcat.md) (Net Cat)
