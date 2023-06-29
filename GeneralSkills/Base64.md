@@ -2,6 +2,8 @@
 ## Description
 > What does this bDNhcm5fdGgzX3IwcDM1 mean? I think it has something to do with bases.
 
+<br />
+
 ## Base64
 **1. What is Base64?**
 
@@ -14,7 +16,7 @@ Common to all binary-to-text encoding schemes, Base64 is designed to carry data 
 <br />
 
 **2. Base64 Design**
-<img src="Base64.png">
+<br /><img src="Base64.png">
 
 <br />
 
@@ -23,14 +25,19 @@ Common to all binary-to-text encoding schemes, Base64 is designed to carry data 
 Fundamentally, Base64 is used to encode binary data as printable text. The first step in the encoding process is to obtain the binary representation of each ASCII character.
 <br /><img src="text-to-base64(1).png">
 
+<br />
 ASCII uses 8 bits to represent individual characters, but Base64 uses 6 bits. Therefore, the binary needs to be broken up into 6-bit chunks.
 <br /><img src="text-to-base64(2).png">
 
+<br />
 Finally, these 6-bit values can be converted into the appropriate printable character by using a Base64 table.
 <br /><img src="text-to-base64(3).png">
 
+<br />
 Since Base64 uses 24-bit sequences, padding is needed when the original binary cannot be divided into a 24-bit sequence. You have probably seen this type of padding before represented by printed equal signs (=). For example, Hi without a newline is represented by only two 8-bit ASCII characters (for a total of 16 bits). Padding is removed by the Base64 encoding schema when data is decoded.
 <br /><img src="text-to-base64(4).png">
+
+<br />
 
 **4. Encode and decode Base64 at the command line**
 
