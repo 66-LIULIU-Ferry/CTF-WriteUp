@@ -8,3 +8,4 @@ General Skills:
 <br />[Base](GeneralSkills/Base64.md) (Base64)
 <br />[HashingJobApp](GeneralSkills/MD5Hash.md) (MD5 Hash)
 <br />[PW Crack](GeneralSkills/PW_Crack.md)
+<br />[First Find, Big Zip](GeneralSkills/Find.md) (Find File Command)
