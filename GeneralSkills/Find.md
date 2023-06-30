@@ -55,4 +55,4 @@ information on the record will last a billion years. Genes and brains and books 
 
 <br />
 
-What to be mentioned is that there are many other to solve those questions and commands in different operation system have different syntax (in this write up, MacOS). I have to admit I am still not familar with find commands so that I haven't sorted out a detailed notes about that. Supplement will be added someday. 
+**What to be mentioned is that there are many other to solve those questions and commands in different operation system have different syntax (in this write up, MacOS). I have to admit I am still not familar with find commands so that I haven't sorted out a detailed notes about that. Supplement will be added someday. **
