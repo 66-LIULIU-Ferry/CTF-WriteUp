@@ -76,14 +76,17 @@ SSH service was created as a secure replacement for the unencrypted Telnet and u
 
 **2. How does SSH work?**
 
-The SSH command consists of 3 distinct parts:
-> `ssh {user}@{host}`
+To log in to a remote computer called **sample.ssh.com**:
+<br /> `ssh sample.ssh.com`
+> Each server has a **host key** which is normally generated automatically when the computer is first booted. It is a cryptographic key used for authenticating computers in the SSH protocol. 
 
-`{user}`  the account you want to access
+<br />Specifying a different user name:
+<br /> `ssh username@sample.ssh.com` or `ssh -l username sample.ssh.com`
 
-`{host}`  this can be IP address or a domain name
+<br />Configuring port forwarding:
+<br /> `ssh -p port username@sample.ssh.com` or `ssh username@sample.ssh.com -p port`
 
-<br />For more SSH commands, find them here: https://www.hostinger.com/tutorials/ssh/basic-ssh-commands
+<br />For more SSH commands, find them here: https://www.ssh.com/academy/ssh/command#ssh-command-in-linux
 
 <br />
 
