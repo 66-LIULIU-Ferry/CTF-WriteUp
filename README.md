@@ -14,3 +14,4 @@ General Skills:
 <br />[Reptition](GeneralSkills/Reptitions.md) (Base)
 <br />[Useless](GeneralSkills/Useless.md) (Man)
 <br />[Based](GeneralSkills/Based.md)
+<br />[Plumbing](GeneralSkills/Plumbing.md) (Pipe)
