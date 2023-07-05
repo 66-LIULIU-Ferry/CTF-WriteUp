@@ -13,3 +13,4 @@ General Skills:
 <br />[Permission](GeneralSkills/Permission.md) (Root)
 <br />[Reptition](GeneralSkills/Reptitions.md) (Base)
 <br />[Useless](GeneralSkills/Useless.md) (Man)
+<br />[Based](GeneralSkills/Based.md)
