@@ -11,4 +11,5 @@ General Skills:
 <br />[First Find, Big Zip](GeneralSkills/Find.md) (Find File Command)
 <br />[Chrono](GeneralSkills/Chrono.md) (Cron, Crontab)
 <br />[Permission](GeneralSkills/Permission.md) (Root)
+<br />[Reptition](GeneralSkills/Reptitions.md) (Base)
 <br />[Useless](GeneralSkills/Useless.md) (Man)
