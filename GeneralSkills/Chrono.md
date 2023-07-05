@@ -11,13 +11,14 @@ The cron command-line utility is a job scheduler on Unix-like operating systems.
 
 The actions of cron are driven by a **crontab** file which is a list of commands that you want to run on a regular schedule.
 
-1. Write a cronjob
+**1. Write a cronjob**
 <br />To create a cronjob, edit `crontab` using the `-e` option:
 <br /> `$ crontab -e`
-<br />This opens crontab with default text editor. To set the text editor explictly, use the `EDITOR` environment variable:
+
+This opens crontab with default text editor. To set the text editor explictly, use the `EDITOR` environment variable:
 <br /> `$ EDITOR=nano crontab -e`
 
-2. Crontab Syntax:
+**2. Crontab Syntax**
 
 ```
 # ┌───────────── minute (0 - 59)
@@ -31,17 +32,10 @@ The actions of cron are driven by a **crontab** file which is a list of commands
 # * * * * * <command to execute>
 ```
 
-Extension:
-
-- **Asterisk (*)**
-    <br /> Asterisks represent "all"
-> `* * * * *` means running at every minute
-- **Comma (,)**
-    <br /> Commas are used to seperate items 
-- **Dash (-)**
-    <br /> Dash defines ranges
-- **Slash (/)**
-    <br /> Slash can be combined with range to specify step value
+- **Asterisk (*)**: represent "all"
+- **Comma (,)**: seperate items 
+- **Dash (-)**: defines ranges
+- **Slash (/)**: combined with range to specify step value
 - **@reboot**: run once after reboot
 - **@yearly**
 - **@annually**
@@ -49,8 +43,9 @@ Extension:
 - **@weekly**
 - **@daily**
 - **@hourly**
+> '* * * * *' means running at every minute
 
-3. Files
+**3. Files**
 <br /> `/etc/crontab`: main system crontab file
 <br /> `/etc/cron.d`: directory for storing system crontabs
 <br /> `/var/spool/cron/`: directory for storing crontabs defined by users
